@@ -92,3 +92,63 @@ main {
 .box-persona h2 {
   background-color: var(--secondary-color);
 }
+/* Telefones em paisagem e abaixo */
+@media (max-width: 480px) {
+  /* Cabeçalho */
+  header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: #fff;
+  }
+  .container {
+    max-width: 480px;
+    width: 90%;
+    margin: auto;
+  }
+  /* Principal */
+  .introducao {
+    height: 120px;
+  }
+  .introducao h1 {
+    font-size: 24px;
+    text-align: center;
+  }
+  .box-persona {
+    margin: auto;
+    border: 1px solid #fff;
+    padding: 3px;
+    margin-top: 5%;
+  }
+}
+/* Tablet em retrato a paisagem e desktop */
+@media (min-width: 768px) and (max-width: 979px) {
+  /* Cabeçalho */
+  header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: #fff;
+  }
+  .container {
+    max-width: 979px;
+    width: 90%;
+    margin: auto;
+  }
+  /* Principal */
+  .introducao {
+    height: 120px;
+  }
+  .introducao h1 {
+    font-size: 24px;
+    text-align: center;
+  }
+  .box-persona {
+    margin: auto;
+    border: 1px solid #fff;
+    padding: 3px;
+    margin-top: 5%;
+  }
+}
