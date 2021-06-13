@@ -8,8 +8,87 @@
   border: none;
   text-decoration: none;
 }
+.logo {
+  width: 80px;
+  height: 100px;
+}
 /* Body */
 body {
+  background-color: var(--bg-color);
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 /* Cabeçalho */
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: #fff;
+}
+.container {
+  max-width: 980px;
+  width: 100%;
+  margin: auto;
+}
+.container nav ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.container nav ul li a {
+  display: inline-block;
+  padding: 3px;
+  font-size: 20px;
+  color: var(--menu-txt-color);
+  border-bottom: 3px solid transparent;
+  font-weight: bold;
+  border-radius: var(--border-radius);
+  transition: 0.6s;
+}
+.container nav ul li a:hover:not(.box-logo a) {
+  font-size: 20px;
+  color: var(--secondary-color);
+  border-bottom: 3px solid var(--border-color);
+}
+/* Principal */
+.introducao {
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 250px;
+  background-image: url("./../img/banner.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+.introducao h1 {
+  text-transform: capitalize;
+  font-size: 72px;
+  color: var(--menu-txt-color);
+}
+main {
+  display: flex;
+  background-color: var(--bg-color);
+  color: var(--main-txt-color);
+}
+.personagens {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.box-persona {
+  text-align: center;
+  width: 240px;
+  border: 1px solid #fff;
+  padding: 3px;
+  margin-top: 5%;
+}
+.box-persona img {
+  width: 100%;
+  border: 1px solid #fff;
+}
+.box-persona h2 {
+  background-color: var(--secondary-color);
+}

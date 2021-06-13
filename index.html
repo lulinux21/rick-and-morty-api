@@ -3,20 +3,20 @@
 <head>
     <meta charset="utf-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta content="viewport=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Rick and Morty</title>
     <link rel="stylesheet" href="./css/style.css" />
 </head>
 <body>
     <!-- Cabeçalho -->
-    <header >
+    <header>
         <div class="container">
             <nav>
                 <ul>
-                    <li>About</li>
-                    <li>
+                    <li><a href="">About</a></li>
+                    <li class="box-logo">
                         <a href="https://rickandmortyapi.com/">
-                            <img src="./img/logo.svg" alt="Logo Rick and Morty" />
+                            <img class="logo" src="./img/logo.svg" alt="Logo Rick and Morty" />
                         </a>
                     </li>
                     <li><a href="https://rickandmortyapi.com/documentation">Docs</a></li>
@@ -24,10 +24,41 @@
             </nav>
         </div>
     </header>
+    <!-- Seção de Chamada -->
+    <section class="introducao">
+        <h1>Desafio Rick And Morty</h1>
+    </section>
     <!-- Conteúdo Principal -->
-    <main class="container box-principal">
-        <section class="title-chamada">
-            <h1>Desafio Rick And Morty</h1>
+    <main>
+        <section class="container personagens">
+            <!-- Personagem 1 -->
+            <div class="box-persona">
+                <figure>
+                    <img src="./img/banner.svg" alt="">
+                </figure>
+                <h2>Lucas Gomes</h2>
+            </div>
+            <!-- Personagem 2 -->
+            <div class="box-persona">
+                <figure>
+                    <img src="./img/banner.svg" alt="">
+                </figure>
+                <h2>Lucas Gomes</h2>
+            </div>
+            <!-- Personagem 3 -->
+            <div class="box-persona">
+                <figure>
+                    <img src="./img/banner.svg" alt="">
+                </figure>
+                <h2>Lucas Gomes</h2>
+            </div>
+            <!-- Personagem 4 -->
+            <div class="box-persona">
+                <figure>
+                    <img src="./img/banner.svg" alt="">
+                </figure>
+                <h2>Lucas Gomes</h2>
+            </div>
         </section>
     </main>
 </body>
