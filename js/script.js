@@ -26,7 +26,6 @@ getCharacter = () => {
 `;
   return fetch(linkApi, {
     method: "GET",
-
     headers: {
       Accept: "application/json",
       "Content-Type": "application/json",
@@ -36,16 +35,16 @@ getCharacter = () => {
     .then((data) => {
       // Personagem 1
       image.src = data[0].image;
-      personagemOne.innerHTML = data[0].name;
+      personagemOne.innerText = data[0].name;
       // Personagem 2
       image2.src = data[1].image;
-      personagemTwo.innerHTML = data[1].name;
+      personagemTwo.innerText = data[1].name;
       // Personagem 3
       image3.src = data[2].image;
-      personagemThree.innerHTML = data[2].name;
+      personagemThree.innerText = data[2].name;
       // Personagem 4
       image4.src = data[3].image;
-      personagemFour.innerHTML = data[3].name;
+      personagemFour.innerText = data[3].name;
     });
 };
 getCharacter();
