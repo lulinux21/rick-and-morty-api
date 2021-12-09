@@ -22,7 +22,7 @@ getCharacter = () => {
     getIdPersonagens(),
     getIdPersonagens(),
   ];
-  const linkApi = `https://rickandmortyapi.com/api/character/${ids}
+  const linkApi = `https://my-json-server.typicode.com/naveteam/fake-api/navers/${ids}
 `;
   return fetch(linkApi, {
     method: "GET",
