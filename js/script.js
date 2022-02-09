@@ -1,12 +1,4 @@
 const maxPersonagens = 671;
-let image = document.getElementById("image");
-let personagemOne = document.getElementById("personagemOne");
-let image2 = document.getElementById("image2");
-let personagemTwo = document.getElementById("personagemTwo");
-let image3 = document.getElementById("image3");
-let personagemThree = document.getElementById("personagemThree");
-let image4 = document.getElementById("image4");
-let personagemFour = document.getElementById("personagemFour");
 
 refreshPage = () => {
   window.location.reload();
@@ -34,18 +26,24 @@ getCharacter = () => {
   })
     .then((response) => response.json())
     .then((data) => {
-      // Personagem 1
-      image.src = data[0].image;
-      personagemOne.innerText = data[0].name;
-      // Personagem 2
-      image2.src = data[1].image;
-      personagemTwo.innerText = data[1].name;
-      // Personagem 3
-      image3.src = data[2].image;
-      personagemThree.innerText = data[2].name;
-      // Personagem 4
-      image4.src = data[3].image;
-      personagemFour.innerText = data[3].name;
+      let section = document.querySelector(".personagens");
+      for (let i = 0; i < data.length; i++) {
+        const element = data[i];
+        // Cria Div persona
+        let div = document.createElement("div");
+        div.classList.add("box-persona");
+        section.appendChild(div);
+        // Cria as imagens
+        let imagem = document.createElement("img");
+        imagem.src = element.image;
+        imagem.alt = element.name;
+        div.appendChild(imagem);
+        // Cria o nome
+        let name = document.createElement("h2");
+        name.innerHTML = element.name;
+        div.appendChild(name);
+        console.log(imagem);
+      }
     });
 };
 getCharacter();

@@ -111,10 +111,13 @@ main {
 .box-persona img {
   width: 100%;
   border: 1px solid #fff;
+  margin: 3px 0;
 }
 .box-persona h2 {
   font-size: 14px;
   background-color: var(--secondary-color);
+  margin-bottom: 3px;
+  padding: 3px 0;
 }
 /* Telefones em paisagem e abaixo */
 @media (max-width: 480px) {
